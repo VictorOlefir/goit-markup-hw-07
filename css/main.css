@@ -185,7 +185,6 @@ img {
 .active-link {
   position: relative;
 }
-
 .active-link::after {
   content: "";
   position: absolute;
