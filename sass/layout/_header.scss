@@ -40,6 +40,14 @@
   display: flex;
   align-items: baseline;
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+  }
 }
 
 .menu-list__item:not(:last-child) {
@@ -62,20 +70,19 @@
   display: flex;
   align-items: center;
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+  }
 }
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
-.menu-list__link:hover,
-.menu-list__link:focus,
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--active-color);
-}
+
 .active-link {
   color: var(--active-color);
 }

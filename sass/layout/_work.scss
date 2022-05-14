@@ -15,10 +15,11 @@
 }
 .work-item {
   width: 370px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.work-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .work-box {
   position: relative;
 }

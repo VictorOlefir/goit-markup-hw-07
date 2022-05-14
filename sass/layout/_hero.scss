@@ -41,7 +41,7 @@
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms, color 800ms;
-}
-.hero__btn:hover {
-  background: #1c79c5;
+  &:hover {
+    background: #1c79c5;
+  }
 }

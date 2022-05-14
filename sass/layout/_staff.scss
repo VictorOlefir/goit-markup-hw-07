@@ -19,6 +19,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .staff-title-top {
   padding-top: 30px;
@@ -55,23 +58,20 @@
   justify-content: center;
   align-items: center;
   transition: background-color 250ms var(--timing-function);
+  &:hover {
+    background-color: var(--active-color);
+  }
+  &:hover .staff-soc-icon {
+    fill: #ffffff;
+  }
+  &:focus {
+    background-color: var(--active-color);
+  }
+  &:focus .staff-soc-icon {
+    fill: #ffffff;
+  }
 }
 .staff-soc-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
-}
-.staff-soc-link:hover {
-  background-color: var(--active-color);
-}
-.staff-soc-link:hover .staff-soc-icon {
-  fill: #ffffff;
-}
-.staff-soc-link:focus {
-  background-color: var(--active-color);
-}
-.staff-soc-link:focus .staff-soc-icon {
-  fill: #ffffff;
-}
-.staff-item:not(:last-child) {
-  margin-right: 30px;
 }

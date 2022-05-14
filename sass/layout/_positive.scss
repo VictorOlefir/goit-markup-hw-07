@@ -15,10 +15,11 @@
 }
 .positive-list__item {
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.positive-list__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .positive-list__title {
   font-weight: 700;
   font-size: 14px;

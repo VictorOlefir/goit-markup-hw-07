@@ -25,23 +25,24 @@
   border-color: #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
+  &:hover {
+    border-color: var(--active-color);
+  }
+  &:hover .regular-icon {
+    fill: var(--active-color);
+  }
+  &:focus {
+    border-color: var(--active-color);
+  }
+  &:focus .regular-icon {
+    fill: var(--active-color);
+  }
 }
 .regular-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
-.regular-link:hover {
-  border-color: var(--active-color);
-}
-.regular-link:hover .regular-icon {
-  fill: var(--active-color);
-}
-.regular-link:focus {
-  border-color: var(--active-color);
-}
-.regular-link:focus .regular-icon {
-  fill: var(--active-color);
-}
+
 .regular-list-item:not(:last-child) {
   margin-right: 30px;
 }
