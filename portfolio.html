@@ -18,43 +18,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+   <header class="header">
       <div class="container">
-        <a href="./index.html" class="header-logo"
-          >Web<span class="header-logo2">Studio</span>
+        <a href="./index.html" class="logo header-logo"
+          >Web<span class="logo header-logo2">Studio</span>
         </a>
-        <nav class="header-navigation">
-          <ul class="header-list list">
-            <li class="nav-li">
-              <a href="./index.html" class="header-item ">Студия</a>
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a href="./index.html" class="menu-list__link active-link"
+                >Студия</a
+              >
             </li>
-            <li class="nav-li">
-              <a href="./portfolio.html" class="header-item active-link">Портфолио</a>
+            <li class="menu-list__item">
+              <a href="./portfolio.html" class="menu-list__link">Портфолио</a>
             </li>
-            <li class="nav-li"><a href="" class="header-item">Контакты</a></li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="nav-li">
-            <a href="mailto:info@devstudio.com" class="contacts-item">
-              <svg class="header-icon" width="16" height="12">
-                    <use
-                      href="./image/index/symbol-defs.svg#icon-header-mail"
-                    ></use>
-                  </svg>
+
+        <ul class="contacts-list header-contacts list">
+          <li class="contacts-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-list__link contacts-item"
+            >
+              <svg class="contacts-list__icon" width="16" height="12">
+                <use
+                  href="./image/index/symbol-defs.svg#icon-header-mail"
+                ></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="nav-li">
-            <a href="tel:+380961111111" class="contacts-item">
-              <svg class="header-icon" width="10" height="16">
-                    <use
-                      href="./image/index/symbol-defs.svg#icon-header-tel"
-                    ></use>
-                  </svg>
+          <li class="contacts-list__item">
+            <a
+              href="tel:+380961111111"
+              class="contacts-list__link contacts-item"
+            >
+              <svg class="contacts-list__icon" width="10" height="16">
+                <use href="./image/index/symbol-defs.svg#icon-header-tel"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>

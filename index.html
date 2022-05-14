@@ -18,29 +18,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="header-logo"
-          >Web<span class="header-logo2">Studio</span>
+        <a href="./index.html" class="logo header-logo"
+          >Web<span class="logo header-logo2">Studio</span>
         </a>
-        <nav class="header-navigation">
-          <ul class="header-list list">
-            <li class="nav-li">
-              <a href="./index.html" class="header-item active-link">Студия</a>
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a href="./index.html" class="menu-list__link active-link"
+                >Студия</a
+              >
             </li>
-            <li class="nav-li">
-              <a href="./portfolio.html" class="header-item">Портфолио</a>
+            <li class="menu-list__item">
+              <a href="./portfolio.html" class="menu-list__link">Портфолио</a>
             </li>
-            <li class="nav-li"><a href="" class="header-item">Контакты</a></li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="nav-li">
-            <a href="mailto:info@devstudio.com" class="contacts-item">
-              <svg class="header-icon" width="16" height="12">
+
+        <ul class="contacts-list header-contacts list">
+          <li class="contacts-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-list__link contacts-item"
+            >
+              <svg class="contacts-list__icon" width="16" height="12">
                 <use
                   href="./image/index/symbol-defs.svg#icon-header-mail"
                 ></use>
@@ -48,9 +56,12 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="nav-li">
-            <a href="tel:+380961111111" class="contacts-item">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contacts-list__item">
+            <a
+              href="tel:+380961111111"
+              class="contacts-list__link contacts-item"
+            >
+              <svg class="contacts-list__icon" width="10" height="16">
                 <use href="./image/index/symbol-defs.svg#icon-header-tel"></use>
               </svg>
               +38 096 111 11 11
@@ -63,10 +74,10 @@
       <!--Главная секция с кнопкой-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title-text">
+          <h1 class="hero__title-text">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn btn" data-modal-open>
+          <button type="button" class="hero__btn btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -75,58 +86,58 @@
       <section class="positive">
         <div class="container">
           <ul class="positive-list list">
-            <li class="positive-item">
-              <div class="positive-icon-div">
-                <svg class="positive-icon" width="70" height="70">
+            <li class="positive-list__item">
+              <div class="positive-list__group">
+                <svg class="positive-list__icon" width="70" height="70">
                   <use
                     href="./image/index/symbol-defs.svg#icon-positive1"
                   ></use>
                 </svg>
               </div>
-              <h3 class="positive-title">Внимание к деталям</h3>
-              <p class="positive-text">
+              <h3 class="positive-list__title">Внимание к деталям</h3>
+              <p class="positive-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="positive-item">
-              <div class="positive-icon-div">
-                <svg class="positive-icon" width="70" height="70">
+            <li class="positive-list__item">
+              <div class="positive-list__group">
+                <svg class="positive-list__icon" width="70" height="70">
                   <use
                     href="./image/index/symbol-defs.svg#icon-positive2"
                   ></use>
                 </svg>
               </div>
-              <h3 class="positive-title">Пунктуальность</h3>
-              <p class="positive-text">
+              <h3 class="positive-list__title">Пунктуальность</h3>
+              <p class="positive-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="positive-item">
-              <div class="positive-icon-div">
-                <svg class="positive-icon" width="70" height="70">
+            <li class="positive-list__item">
+              <div class="positive-list__group">
+                <svg class="positive-list__icon" width="70" height="70">
                   <use
                     href="./image/index/symbol-defs.svg#icon-positive3"
                   ></use>
                 </svg>
               </div>
-              <h3 class="positive-title">Планирование</h3>
-              <p class="positive-text">
+              <h3 class="positive-list__title">Планирование</h3>
+              <p class="positive-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="positive-item">
-              <div class="positive-icon-div">
-                <svg class="positive-icon" width="70" height="70">
+            <li class="positive-list__item">
+              <div class="positive-list__group">
+                <svg class="positive-list__icon" width="70" height="70">
                   <use
                     href="./image/index/symbol-defs.svg#icon-positive4"
                   ></use>
                 </svg>
               </div>
-              <h3 class="positive-title">Современные технологии</h3>
-              <p class="positive-text">
+              <h3 class="positive-list__title">Современные технологии</h3>
+              <p class="positive-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
