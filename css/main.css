@@ -883,7 +883,7 @@ img {
 .input-check:hover + .check-text::before {
   border-color: var(--active-color);
 }
-.input-check:hover + .check-text::before {
+.input-check:focus + .check-text::before {
   border-color: var(--active-color);
 }
 

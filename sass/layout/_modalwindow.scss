@@ -116,7 +116,7 @@
   &:hover + .check-text::before {
     border-color: var(--active-color);
   }
-  &:hover + .check-text::before {
+  &:focus + .check-text::before {
     border-color: var(--active-color);
   }
 }
